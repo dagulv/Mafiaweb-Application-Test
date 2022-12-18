@@ -1,0 +1,132 @@
+/*
+*   CONTENTS
+*   
+*   PAGE SETTINGS
+*
+*   LAYOUT
+*   Header
+*   Main
+*
+*   COMPONENTS
+*   Drop
+*   
+*/
+
+/*************/
+/* #Settings */
+/*************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 1rem 2rem;
+
+}
+h1,h2 {
+    margin: 1rem 0;
+}
+
+
+/***********/
+/* #Header */
+/***********/
+.main-header {
+    border: 2px dashed gray;
+}
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav__logo {
+    display: block;
+    max-width: 250px;
+}
+.main-nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 3rem;
+}
+.main-nav__item {
+    height: 100%;
+}
+.main-nav__item--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    color: palevioletred;
+    text-decoration: none;
+}
+.main-nav__item--link:hover {
+    color: #fff;
+    background-color: palevioletred;
+}
+
+@media screen and (min-width: 991px) {
+    .main-nav {
+        flex-direction: row;
+    }
+}
+
+/***********/
+/* #Main   */
+/***********/
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/***********/
+/* #Drop   */
+/***********/
+.drop-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.drop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.drop-item {
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 6px;
+    user-select: none;
+    height: 100%;
+    cursor: move;
+}
+.drop-zone {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    min-height: 250px;
+    border: 2px dashed gray;
+}
+.drop-zone__title{
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 991px) {
+    .drop-wrapper {
+        // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+}

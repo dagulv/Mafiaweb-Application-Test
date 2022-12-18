@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="/"><picture>
+                <source type="image/svg+xml" srcset="material/logo.svg"> 
+                <img class="main-nav__logo" src="material/logo.png" alt="Site logo">
+            </picture></a>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="page-1.html" class="main-nav__item--link">Page 1</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="page-2.html" class="main-nav__item--link">Page 2</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="https://www.google.com/" target="_blank" class="main-nav__item--link">Google</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1>Hi, this is a test!</h1>
+        <div class="drop-wrapper">
+            <div class="drop-content">
+                <div class="drop-item" draggable="true">
+                    <p class="drop-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam debitis cum, aperiam ducimus pariatur quis exercitationem unde aspernatur animi dolorum corporis voluptas veritatis, non, magnam commodi? Alias est ratione quod quasi, placeat error non deserunt nisi, saepe incidunt mollitia iure rem quia harum omnis animi cum exercitationem. A, dolorum molestias. Alias est ratione quod quasi, placeat error non deserunt nisi, saepe incidunt mollitia iure rem quia harum omnis animi cum exercitationem. A, dolorum molestias.</p>
+                </div>
+                <div class="drop-item" draggable="true">
+                    <p class="drop-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam debitis cum, aperiam ducimus pariatur quis exercitationem unde aspernatur animi dolorum corporis voluptas veritatis, non, magnam commodi? </p>
+                </div>
+                <div class="drop-item" draggable="true">
+                    <p class="drop-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam debitis cum, aperiam ducimus pariatur quis exercitationem unde aspernatur animi dolorum corporis voluptas veritatis, non, magnam commodi? Alias est ratione quod quasi, placeat error non deserunt nisi, saepe incidunt mollitia iure rem quia harum omnis animi cum exercitationem. A, dolorum molestias.</p>
+                </div>
+            </div>
+            <div class="drop-zone">
+                <h2 class="drop-zone__title">The dropzone</h2>
+            </div>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
